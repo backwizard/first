@@ -1,0 +1,35 @@
+<!DOcTYPE html>
+<html ng-app="application">
+
+<head>
+    <!-- bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- bootstrap theme -->
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center">{{"Tanaka-San"}}'s Sushi Store</h1>
+        <h2 class="text-center">Open Since {{10*200}}. </h2>
+    </header>
+
+    <div class="list-group">
+        <div class="list-group-item" ng-controller="storeController as store">
+            <h1>{{store.sushi.name}}</h1>
+            <h2>{{store.sushi.price}} yen</h2>
+            <p>Sushi's Description</p>
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/lib/jquery.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="js/lib/bootstrap.min.js"></script>
+    <!-- AngularJS JavaScript -->
+    <script src="js/lib/angular.min.js"></script>
+    <!-- มีบางอย่างหายไป!!-->
+    <script src="js/sushistore.js"></script>
+</body>
+
+</html>
